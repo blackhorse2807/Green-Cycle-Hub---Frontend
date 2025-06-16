@@ -1,0 +1,40 @@
+/* Tablet-specific fixes for the VELEBIT GREEN text */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tablet-mode .typing-wrapper {
+    width: auto !important;
+    min-width: 300px !important; 
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+  }
+  
+  .tablet-mode .typing-text {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 300px !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-align: center !important;
+    margin-right: 0 !important;
+    font-size: 2.5rem !important;
+  }
+  
+  .tablet-mode .hero-h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .tablet-mode .static-text {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 5px !important;
+  }
+} 

@@ -1,0 +1,45 @@
+name: Build and Deploy Frontend Docker Image to GHCR
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set Version run_number
+        run: |
+          VERSION=$(./pipeline_script/set_semver.sh)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "App Version is: $VERSION"
+                                   
+
+      - name: Build Docker image and push to GHCR
+        run: |
+          echo "${{ secrets.DOCKER_GHCR_TOKEN }}" | docker login ghcr.io -u tapasrwth --password-stdin
+          docker build -t ghcr.io/rppmain/frontend:dev-${{ VERSION }}-${{ github.run_number }} .
+          docker push ghcr.io/rppmain/frontend:dev-${{ VERSION }}-${{ github.run_number }}
+      - name: Deploy to dev environment
+        env:
+          EC2_KEY: ${{ secrets.EC2_KEY }}
+          EC2_HOST: "13.233.231.66"
+        run: |
+          echo "${{ secrets.EC2_KEY }}" > ec2_key.pem
+          chmod 600 ec2_key.pem
+          ssh -i ec2_key.pem -o StrictHostKeyChecking=no ec2-user@${EC2_HOST} << 'EOF'
+            docker rmi -f $(docker images -aq)
+            echo "${{ secrets.DOCKER_GHCR_TOKEN }}" | docker login ghcr.io -u tapasrwth --password-stdin
+            docker pull ghcr.io/rppmain/frontend:dev-${{ VERSION }}-${{ github.run_number }}
+            docker stop frontend || true
+            docker rm frontend || true
+            docker run --restart=always -d --name frontend -p 3000:3000 ghcr.io/rppmain/frontend:dev-${{ VERSION }}-${{ github.run_number }}
+          EOF
+      - name: Clean up
+        run: |
+          docker logout ghcr.io
+          docker rmi ghcr.io/rppmain/frontend:dev-${{ VERSION }}-${{ github.run_number }} || true
