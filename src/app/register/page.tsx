@@ -97,7 +97,7 @@ export default function RegisterPage() {
             Registration Successful!
           </h2>
           <p className="text-gray-700 mb-6">
-            Please check your email and confirm your account within 14 days.
+            Please Login to your account.
           </p>
           <Link
             href="/login"
