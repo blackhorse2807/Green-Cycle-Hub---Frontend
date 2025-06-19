@@ -110,10 +110,10 @@ export default function Navbar() {
           className="flex items-center space-x-2 hover:scale-105 transition-transform duration-200"
         >
           <Image
-            src="/colorlogo.svg"
-            alt="VelebitGreen Logo"
-            width={50}
-            height={50}
+            src="/logo2.png"
+            alt="Green Cycle Hub Logo"
+            width={100}
+            height={150}
             className="h-12 sm:h-16 w-auto"
             priority
           />
@@ -152,7 +152,6 @@ export default function Navbar() {
               <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg py-1 z-50 border border-gray-100 transform opacity-100 scale-100 transition-all duration-200 ease-out origin-top-left">
                 {[
                   { href: "/aboutus", label: "About Us" },
-                  { href: "/team", label: "Meet the Team" },
                   { href: "/contact", label: "Contact Us" },
                 ].map(({ href, label }) => (
                   <Link
@@ -466,7 +465,6 @@ export default function Navbar() {
                   <div className="pl-11 mt-1 space-y-1">
                     {[
                       { href: "/aboutus", label: "About Us" },
-                      { href: "/team", label: "Meet the Team" },
                       { href: "/contact", label: "Contact Us" },
                     ].map(({ href, label }) => (
                       <Link

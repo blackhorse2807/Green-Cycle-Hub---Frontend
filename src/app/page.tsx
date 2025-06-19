@@ -96,6 +96,7 @@ const NatureHero = () => {
     "/figma/3.png",
     "/figma/4.png",
     "/figma/5.png",
+    "/figma/6.png",
   ];
 
   // Index of the currently displayed phone image
@@ -537,7 +538,7 @@ const NatureHero = () => {
             text-align: center !important;
           }
           
-          /* Fix for the VELEBIT GREEN text in tablet view */
+          /* Fix for the GREEN CYCLE HUB text in tablet view */
           .tablet-mode .${styles.typing_wrapper},
           .tablet-mode .${styles.typing_text} {
             width: auto !important;
@@ -798,7 +799,7 @@ const NatureHero = () => {
                         isTablet ? "typing-text" : ""
                       }`}
                     >
-                      VELEBIT GREEN
+                      GREEN CYCLE HUB
                     </span>
                   </div>
                 </h1>
@@ -816,7 +817,7 @@ const NatureHero = () => {
                     <div>
                       <div className="flex items-center space-x-6">
                         <Link
-                          href="https://www.linkedin.com/company/velebit-green/"
+                          href="/"
                           aria-label="LinkedIn"
                           target="_blank"
                           className="w-11 h-11 flex items-center justify-center bg-white text-gray-800 hover:bg-[#0077b5] hover:text-white transition-all duration-300 shadow-sm rounded-full overflow-hidden group"
@@ -878,7 +879,7 @@ const NatureHero = () => {
                     <div className="flex flex-col items-center">
                       <div className="flex items-center justify-center gap-6">
                         <Link
-                          href="https://www.linkedin.com/company/velebit-green/"
+                          href="/"
                           aria-label="LinkedIn"
                           target="_blank"
                           className="w-[44px] h-[44px] flex items-center justify-center bg-white text-gray-800 hover:bg-[#0077b5] hover:text-white transition-all duration-300 shadow-sm rounded-full overflow-hidden group"

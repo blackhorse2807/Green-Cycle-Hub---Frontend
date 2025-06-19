@@ -6,7 +6,7 @@ import { ChevronDown, ChevronUp, Mail, Phone, MapPin, Clock, Send } from 'lucide
 
 const faqs = [
   {
-    question: 'What products does VelebitGreen offer?',
+    question: 'What products does Green Cycle Hub offer?',
     answer: 'We offer a wide range of eco-friendly and sustainable agriculture products including fertilizers, seeds, and tools.',
   },
   {
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: 'How do I contact support?',
-    answer: 'Use the contact form or email us at support@velebitgreen.com. We usually respond within 24 hours.',
+    answer: 'Use the contact form or email us at support@green-cycle-hub.com. We usually respond within 24 hours.',
   },
 ];
 
@@ -113,8 +113,8 @@ export default function ContactPage() {
               <Mail className="w-6 h-6 text-[#1B442E]" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Us</h3>
-            <p className="text-gray-600 mb-1">info@velebitgreen.com</p>
-            <p className="text-gray-600">support@velebitgreen.com</p>
+            <p className="text-gray-600 mb-1">info@green-cycle-hub.com</p>
+            <p className="text-gray-600">support@green-cycle-hub.com</p>
           </div>
           
           {/* Card 3 */}

@@ -12,8 +12,8 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <Link href="/" className="inline-block">
               <Image
-                src="/whitelogo.svg"
-                alt="VelebitGreen"
+                src="/logo-white.png"
+                alt="Green Cycle Hub Logo"
                 width={175}
                 height={175}
                 priority
@@ -22,8 +22,8 @@ export default function Footer() {
             </Link>
             <h4 className="mt-4 text-base font-semibold text-white">Address:</h4>
             <p className="text-base text-gray-300 leading-relaxed">
-              Srijan Tech Park, DN Block, Sector V, Bidhannagar, Kolkata – 700091,<br/>
-              West Bengal, India
+              Patel Hall of Residence, IIT Kharagpur<br/>
+              Kharagpur, West Bengal, India
             </p>
           </div>
 
@@ -116,7 +116,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-sm text-gray-300">
-            © 2025 Velebit Green - Crafted with care to build a sustainable tomorrow ♻️
+            © 2025 Green Cycle Hub - Crafted with care to build a sustainable tomorrow ♻️
           </p>
         </div>
       </div>

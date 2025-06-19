@@ -63,7 +63,7 @@ export default function AboutUsSection() {
                 <span className="block text-[#e2d7ab] mt-2">Plastic Recycling</span>
               </h1>
               <p className="text-xl text-gray-200 leading-relaxed sm:text-left text-justify">
-                At Velebit Green, we&apos;re revolutionizing the recycling industry through innovative technology 
+                At Green Cycle Hub, we&apos;re revolutionizing the recycling industry through innovative technology 
                 and sustainable practices. Our mission is to create a cleaner, greener future for generations to come.
               </p>
               <div className={`flex flex-wrap gap-6 ${isMobile ? 'justify-center w-full' : ''}`}>
@@ -235,7 +235,7 @@ export default function AboutUsSection() {
                 materials into a thriving circular economy.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed sm:text-left text-justify">
-                Our goal is to establish Velebit Green as the benchmark for sustainable
+                Our goal is to establish Green Cycle Hub as the benchmark for sustainable
                 trade—where every transaction is fast, transparent, and eco-conscious,
                 paving the way for a cleaner, greener future for generations to come.
               </p>
