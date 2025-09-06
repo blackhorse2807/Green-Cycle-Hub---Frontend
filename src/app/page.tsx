@@ -799,7 +799,7 @@ const NatureHero = () => {
                         isTablet ? "typing-text" : ""
                       }`}
                     >
-                      GREEN CYCLE HUB
+                      Eco-Find
                     </span>
                   </div>
                 </h1>
