@@ -6,11 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     // any domains you load via <Image src="https://…"/>
     domains: [
-      "example.com",
-      "velebitgreen.s3.ap-south-1.amazonaws.com",
-      "velebitgreen-marketplace-images.s3.ap-south-1.amazonaws.com",
-      "d383kuiij66lee.cloudfront.net",
-      "regalfincorp.com"
+      "myawsbucketodoo-1.s3.ap-south-1.amazonaws.com",
     ],
     remotePatterns: [
       {

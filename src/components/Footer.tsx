@@ -13,7 +13,7 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <Image
                 src="/Ecofind-white.png"
-                alt="Green Cycle Hub Logo"
+                alt="EcoFind"
                 width={175}
                 height={175}
                 priority
@@ -116,7 +116,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-sm text-gray-300">
-            © 2025 Green Cycle Hub - Crafted with care to build a sustainable tomorrow ♻️
+            © 2025 Naturals - Crafted with care to build a sustainable tomorrow ♻️
           </p>
         </div>
       </div>
